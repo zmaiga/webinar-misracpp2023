@@ -74,7 +74,8 @@ jobs:
         # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
         # reportFormat: xml,html,custom
         testConfig: 'MISRA C++ 2023 CI gate.properties'
-        additionalParams: '-fail -settings dtp.settings -publish -property build.id=${{ env.build_id }}'
+        #additionalParams: '-fail -settings dtp.settings -publish -property build.id=${{ env.build_id }}'
+        additionalParams: '-fail -publish -property build.id=${{ env.build_id }}'
 
     - name: Upload results (SARIF)
       if: always()
