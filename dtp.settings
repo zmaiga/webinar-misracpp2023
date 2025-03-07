@@ -1,4 +1,4 @@
-dtp.url=http://192.168.1.56:8443/
+dtp.url=https://192.168.1.56:8443/
 dtp.user=admin
 dtp.password=admin
 dtp.project=FileServer
