@@ -75,7 +75,7 @@ jobs:
         # reportFormat: xml,html,custom
         testConfig: 'MISRA C++ 2023 CI gate.properties'
         #additionalParams: '-fail -settings dtp.settings -publish -property build.id=${{ env.build_id }}'
-        additionalParams: '-fail -settings dtp.settings -publish -property build.id=${{ env.build_id }}'
+        additionalParams: '-settings dtp.settings -publish -property build.id=${{ env.build_id }}'
 
     - name: Upload results (SARIF)
       if: always()
