@@ -1,4 +1,5 @@
 {
     "cpptest.compilerIdentifier": "gcc_11-64",	
+    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -input build/compile_commands.json",
     "cpptest.testConfiguration": "/home/support/std_work/webinar-misracpp2023/MISRA C++ 2023 local.properties"
 }

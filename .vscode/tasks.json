@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "CMake (Local): Configure for SA",
+        "type": "shell",
+        "command": "cmake -Bbuild -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_VERBOSE_MAKEFILE=ON",
+        "group": "build"
+      },
+      
+      {
+        "label": "CMake (Local): Run C++test SA",
+        "type": "shell",
+        "command": "bash -c 'cmake --build build -j8; ./build/atm_gtest --gtest_output=xml:gtest_results.xml'",
+        "group": "build"
+      }
+     
+    ]
+  }
